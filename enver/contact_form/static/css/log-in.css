@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    color:white;
+}
+.log-in-form{
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: var(--main-landing-color);
+    margin: 30px auto;
+    display: flex;
+}
+input{
+    background-color: #1E1E20;
+    color: white;
+    margin: 0 auto;
+    border-top: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.log-in-form input[type='submit']:hover{
+    /* margin: 20px 0; */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

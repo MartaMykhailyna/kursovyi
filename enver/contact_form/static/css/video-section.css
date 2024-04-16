@@ -1,0 +1,116 @@
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.video-section__text {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.video-section__text h2 {
+    /* font-size: 60px; */
+    font-style: normal;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+.video-section__text p {
+    margin-left: 90px;
+    /* font-size: 21px; */
+    font-style: normal;
+    font-weight: 100;
+    line-height: 39px; /* 185.714% */
+    letter-spacing: -0.657px;
+}
+
+.video-section__banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.video-section__btn-play-container {
+    position: absolute;
+    width: 10%; /* Задаємо ширину відсотками (50% встановить діаметр кола) */
+    height: 0; /* Обнулюємо висоту, оскільки коло має бути без висоти */
+    padding-bottom: 10%;
+    top: 40%;
+    left: 46%;
+    border-radius: 50%;
+    background-color: rgba(84, 84, 212, 1);
+}
+.video-section__btn-play-triangle{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-left: 2.5rem solid white;
+}
+@media (max-width: 1000px) {
+    .video-section{
+        display: block;
+        position: static;
+    }
+    .video-section__text{
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .video-section__text p{
+        /* font-size: 16px; */
+        font-style: normal;
+        font-weight: 100;
+        line-height: 185.714%; /* 185.714% */
+        letter-spacing: -0.657px;
+        margin: 30px 0;
+    }
+    .video-section__banner{
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .video-section__btn-play-container {
+        top: 50%;
+        left: 50%;
+    }
+    .video-section__btn-play-triangle{
+        top: 32%;
+        border-top: 1.5vw solid transparent;
+        border-bottom: 1.5vw solid transparent;
+        border-left: 2.5vw solid white;
+    }
+}
+@media (max-width: 888px){
+    .video-section__text h2{
+        /* font-size: 36px; */
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%;
+    }
+    .video-section__text p{
+        /* font-size: 16px; */
+        font-style: normal;
+        font-weight: 100;
+        line-height: 150%;
+        margin: 30px 0;
+    }
+    .video-section__btn-play-container{
+        top: 45%;
+        left: 47%;
+    }
+    .video-section__btn-play-triangle{
+        top: 35%;
+        left: 40%;
+    }
+}

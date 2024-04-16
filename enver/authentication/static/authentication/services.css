@@ -1,0 +1,182 @@
+.services {
+    position: relative;
+    margin-top: 150px;
+}
+.services-gradient-1 {
+    position: absolute;
+    width: 467px;
+    height: 508.495px;
+    transform: rotate(-54.374deg);
+    border-radius: 233.5px;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.21) 0%, rgba(84, 84, 212, 0.09) 100%);
+    filter: blur(150px);
+    left: -25%;
+    top: -200px;
+}
+
+.services-gradient-2 {
+    position: absolute;
+    top: -450px;
+    width: 860.002px;
+    height: 2576.87px;
+    transform: rotate(65.712deg);
+    flex-shrink: 0;
+    border-radius: 233.5px;
+    background: linear-gradient(180deg, rgba(251, 168, 28, 0.05) 0%, rgba(224, 86, 136, 0.02) 100%);
+    filter: blur(150px);
+}
+
+.services__vector-triangles-container {
+    position: absolute;
+    left: 100px;
+    top: -105px;
+    width: 104px;
+    height: 120px;
+}
+
+.services__vector-plus-container-1 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 42px;
+    height: 42px;
+    transform: rotate(-31.418deg)
+}
+
+.services__vector-plus-container-2 {
+    position: absolute;
+    top: 750px;
+    width: 42px;
+    height: 42px;
+    transform: rotate(25.344deg);
+}
+
+.services h2 {
+    width: 695px;
+    text-align: center;
+    /* font-size: 60px; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 116.667% */
+    margin: 0 auto 30px;
+}
+.services-list__columns-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid green;
+}
+.services-list__column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin: 24px;
+    margin-bottom: 40px;
+    /*border: 2px solid yellow;*/
+    z-index: 10000;
+}
+.services-list__column:hover{
+    /*background-color: #3a3a90;*/
+    background: linear-gradient(120deg,#5454D435 10%,#FBA81C0C 50%);
+    border-bottom-right-radius: 7%;
+    border-top-left-radius: 7%;
+    border: 2px solid #5454D435;
+    /*border-radius: 5%;*/
+}
+.services-list__column-img-container {
+    width: 69px;
+    height: 69px;
+}
+
+.services-list__column h3 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-size: 28px; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.75px;
+    margin: 20px auto;
+}
+
+.services-list__column p {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-size: 21px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.5px;
+    width: 299px;
+}
+
+@media (max-width: 1000px) {
+        .services{
+            position: relative;
+        }
+    .services h2{
+        width: 100%;
+        /* font-size: 36px; */
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1200px){
+    .services-list__columns-container{
+        margin: 0 auto;
+    }
+}
+@media(max-width: 1130px){
+     .services .landing{
+        padding: 0;
+    }
+    .services-list__columns-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px auto;
+    }
+}
+@media (max-width: 425px){
+    .services h2{
+        width: 90%;
+        /* font-size: 36px; */
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: left;
+        margin: 0;
+    }
+}
+@media (max-width: 768px){
+    .services-list__columns-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        margin-left: -10px;
+    }
+}
+@media(min-width: 1700px){
+    .services__vector-plus-container-2 {
+        top: 850px;
+    }
+    .services h2 {
+        width: 895px;
+        text-align: center;
+        line-height: 80px; /* 116.667% */
+    }
+    .services-list__columns-container{
+        gap: 60px;
+    }
+    .services-list__column-img-container {
+        width: 79px;
+        height: 79px;
+    }
+    .services-list__column p {
+        font-size: 29px;
+        line-height: 38px; /* 140% */
+        width: 470px;
+    }
+}

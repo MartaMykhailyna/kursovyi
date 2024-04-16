@@ -1,0 +1,53 @@
+footer{
+    margin-top: 100px;
+    height: 120px;
+}
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    font-family: var(--other-font);
+    color: var(--second-text-color);
+}
+footer p{
+    font-size: 16px;
+}
+.footer__pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+@media (max-width: 1260px){
+    .footer__text-about-rights{
+        width: 20%;
+    }
+}
+@media (max-width: 1000px){
+    footer{
+        height: 230px;
+        margin-top: 60px;
+    }
+ footer nav{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 30px 0;
+ }
+ .footer__pages{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+}
+@media (min-width: 1700px){
+    .footer__pages p{
+        font-size:21px;
+    }
+    .footer__text-about-rights p{
+        font-size: 21px;
+    }
+}

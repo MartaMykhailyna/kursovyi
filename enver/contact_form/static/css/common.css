@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    --main-landing-color: rgb(25, 25, 27);
+    --heading-text-color: rgba(255, 255, 255, 1);
+    --second-text-color: rgba(255, 255, 255, 0.7);
+    --heading-font: 'Nunito Sans', sans-serif;;
+    --other-font: Graphik, sans-serif;
+
+    /*    slider pagination    */
+
+    --swiper-pagination-color: rgba(84, 84, 212, 1);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #121213;;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-pagination-bottom: 10%;
+}
+@media(max-width: 1171px){
+    :root{
+        --swiper-pagination-bottom: 10%;
+    }
+}
+@media(max-width: 660px){
+    :root{
+        --swiper-pagination-bottom: 15%;
+    }
+}
+@media(max-width: 639px){
+    :root{
+        --swiper-pagination-bottom: 15%;
+    }
+}
+@media(min-width: 1700px){
+    :root{
+        --swiper-pagination-bullet-size: 12px;
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
+    }
+}
+/* Fade in up */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*<div class="animated animatedFadeInUp fadeInUp">
+    <h2>Browse</h2>
+    <p>Check out the latest charts, brand new releases and great playlists for right now.</p>
+</div>*/
+
+/* /Fade in up */
+
+body {
+    min-width: 375px;
+    height: auto;
+    background-color: var(--main-landing-color);
+}
+
+.landing {
+    width: 100%;
+    height: auto;
+    padding: 0 90px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1900px;
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-text-color);
+}
+
+h2 {
+    font-family: var(--other-font);
+    color: var(--heading-text-color);
+    font-size: 60px;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--heading-text-color);
+    font-size: 28px;
+}
+
+p {
+    font-family: var(--other-font);
+    color: var(--second-text-color);
+    font-size: 21px;
+}
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(84, 84, 212, 1);
+    /* color: #fff; */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .landing {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1000px) {
+    h2{
+        font-size: 36px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .landing {
+        /* width: 100%; */
+        height: auto;
+        background-color: var(--main-landing-color);
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 888px) {
+    .landing {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px){
+    #scrollToTopButton{
+        right: 7%;
+    }
+}
+@media (min-width: 1700px){
+    h2{
+        font-size: 73px;
+    }
+    h3{
+        font-size: 38px;
+    }
+    p{
+        font-size: 31px;
+    }
+}
